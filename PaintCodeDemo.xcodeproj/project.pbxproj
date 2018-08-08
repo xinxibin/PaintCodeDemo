@@ -12,7 +12,24 @@
 		4159FE392111C7820092F260 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4159FE372111C7820092F260 /* Main.storyboard */; };
 		4159FE3B2111C7820092F260 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4159FE3A2111C7820092F260 /* Assets.xcassets */; };
 		4159FE3E2111C7820092F260 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4159FE3C2111C7820092F260 /* LaunchScreen.storyboard */; };
+		4159FE4D2111C8610092F260 /* StyleKitName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4159FE4C2111C8610092F260 /* StyleKitName.swift */; };
+		41B286152112A3D500892300 /* Telekinesis.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41B286142112A3D500892300 /* Telekinesis.framework */; };
+		41B286162112A3F700892300 /* Telekinesis.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 41B286142112A3D500892300 /* Telekinesis.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		41B286182112A72500892300 /* BirdsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41B286172112A72500892300 /* BirdsView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4159FE4A2111C8170092F260 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				41B286162112A3F700892300 /* Telekinesis.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4159FE302111C7820092F260 /* PaintCodeDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PaintCodeDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,6 +39,9 @@
 		4159FE3A2111C7820092F260 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4159FE3D2111C7820092F260 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4159FE3F2111C7820092F260 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4159FE4C2111C8610092F260 /* StyleKitName.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleKitName.swift; sourceTree = "<group>"; };
+		41B286142112A3D500892300 /* Telekinesis.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Telekinesis.framework; sourceTree = "<group>"; };
+		41B286172112A72500892300 /* BirdsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BirdsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41B286152112A3D500892300 /* Telekinesis.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,14 +75,25 @@
 		4159FE322111C7820092F260 /* PaintCodeDemo */ = {
 			isa = PBXGroup;
 			children = (
+				41B286142112A3D500892300 /* Telekinesis.framework */,
+				4159FE4C2111C8610092F260 /* StyleKitName.swift */,
 				4159FE332111C7820092F260 /* AppDelegate.swift */,
 				4159FE352111C7820092F260 /* ViewController.swift */,
+				41B286172112A72500892300 /* BirdsView.swift */,
+				4159FE4E2111C8FB0092F260 /* Config */,
+			);
+			path = PaintCodeDemo;
+			sourceTree = "<group>";
+		};
+		4159FE4E2111C8FB0092F260 /* Config */ = {
+			isa = PBXGroup;
+			children = (
 				4159FE372111C7820092F260 /* Main.storyboard */,
 				4159FE3A2111C7820092F260 /* Assets.xcassets */,
 				4159FE3C2111C7820092F260 /* LaunchScreen.storyboard */,
 				4159FE3F2111C7820092F260 /* Info.plist */,
 			);
-			path = PaintCodeDemo;
+			path = Config;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,6 +106,7 @@
 				4159FE2C2111C7820092F260 /* Sources */,
 				4159FE2D2111C7820092F260 /* Frameworks */,
 				4159FE2E2111C7820092F260 /* Resources */,
+				4159FE4A2111C8170092F260 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -137,7 +170,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4159FE362111C7820092F260 /* ViewController.swift in Sources */,
+				41B286182112A72500892300 /* BirdsView.swift in Sources */,
 				4159FE342111C7820092F260 /* AppDelegate.swift in Sources */,
+				4159FE4D2111C8610092F260 /* StyleKitName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,12 +311,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TNZMFQD6HR;
-				INFOPLIST_FILE = PaintCodeDemo/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PaintCodeDemo",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/PaintCodeDemo/Config/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xinxibin.www.PaintCodeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -291,12 +332,18 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = TNZMFQD6HR;
-				INFOPLIST_FILE = PaintCodeDemo/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/PaintCodeDemo",
+				);
+				INFOPLIST_FILE = "$(SRCROOT)/PaintCodeDemo/Config/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.xinxibin.www.PaintCodeDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

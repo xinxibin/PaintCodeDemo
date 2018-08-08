@@ -10,9 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+
+        titleLabel.textColor = StyleKitName.fillColor
+        self.imageView.image = StyleKitName.imageOfCanvas1
     }
 
     override func didReceiveMemoryWarning() {
